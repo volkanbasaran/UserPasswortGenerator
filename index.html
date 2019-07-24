@@ -1,0 +1,67 @@
+<html>
+
+<title>
+    Password Generator
+</title>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<style>
+    body {
+        padding-top: 50px;
+    }
+
+    .table-striped {
+        width: auto !important;
+    }
+
+    .form-control {
+        width: auto !important;
+    }
+</style>
+
+<body class="container">
+    <h4><strong>Generiere Passwörter für deine Kursteilnehmer</strong></h4>
+    </br>
+    </br>
+    <form>
+        <p>Geben sie die Abkürzung für ihren Kurs ein:</p>
+        <p>
+            <input type="text" id="kurs" class="form-control" placeholder="z.B. EK für Englischkurs">
+        </p>
+        </br>
+        <p>Wieviele Zeichen soll das Passwort haben?</p>
+        <p>
+            <input type="number" id="zeichen" class="form-control" placeholder="Anzahl der Zeichen">
+        </p>
+        </br>
+        <p>Für wieviele Teilnehmer sollen Passwörter erstellt werden?</p>
+        <p>
+            <input type="number" id="amount" class="form-control" placeholder="Anzahl der Teilnehmer">
+        </p>
+    </form>
+    </br>
+    <p>
+        <button type="button" class="btn btn-info" id="erstellen">Erstellen</button>
+    </p>
+    </br>
+    <table class="table table-striped" id="result">
+        <tr>
+            <th>User</th>
+            <th>Passwort</th>
+        </tr>
+    </table>
+    </br>
+    <p>
+        <button type="button" class="btn btn-success" id="csv">Als CSV runterladen</button>
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="password.js"></script>
+</body>
+
+</html>
